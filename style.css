@@ -4,15 +4,18 @@
   box-sizing: border-box;
 }
 .container {
-  width: 80%;
+  font-family: Arial, Helvetica, sans-serif;
   margin: auto;
+  background: #bebcbc94;
 }
 .navbar {
   display: flex;
   align-items: center;
-  background: #fefefe;
-  height: 60px;
   justify-content: space-between;
+  padding-left: 10%;
+  padding-right: 10%;
+  margin: auto;
+  background: white;
 }
 .left_section {
   display: flex;
@@ -61,4 +64,22 @@
   border: none;
   color: white;
   border-radius: 4px;
+}
+
+.list_section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin: auto;
+  padding: 10px 0;
+}
+
+.lists {
+  display: flex;
+  gap: 14px;
+}
+.list_section > .lists li {
+  list-style: none;
+  font-size: 14px;
 }
