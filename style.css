@@ -4,18 +4,17 @@
   box-sizing: border-box;
 }
 .container {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Roboto", sans-serif;
+  background: rgb(226, 225, 225);
   margin: auto;
-  background: #bebcbc94;
 }
 .navbar {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-left: 10%;
-  padding-right: 10%;
-  margin: auto;
   background: white;
+  margin: auto;
+  padding: 0 15%;
 }
 .left_section {
   display: flex;
@@ -43,7 +42,7 @@
 .input_section input {
   border: none;
   outline: none;
-  min-width: 80%;
+  min-width: 70%;
 }
 .right_section {
   display: flex;
@@ -70,7 +69,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 80%;
+  width: 70%;
   margin: auto;
   padding: 10px 0;
 }
@@ -82,4 +81,85 @@
 .list_section > .lists li {
   list-style: none;
   font-size: 14px;
+}
+.line {
+  color: silver;
+}
+
+.movie_section_container {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  margin: auto;
+  padding: 4px 0;
+}
+.heading_link_section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 3rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+.heading_link_section > a {
+  color: red;
+  font-size: 16px;
+}
+
+.heading_link_section > h1 {
+  font-size: 24px;
+}
+
+.movie_card_section {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 16px;
+}
+
+.cardContainer {
+  width: 220px;
+  height: 100%;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  word-break: break-word;
+}
+.cardContainer > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px 10px 0px 0px;
+}
+.rating {
+  background: #000;
+  color: white;
+  border-radius: 0px 0px 10px 10px;
+  padding: 0.5rem;
+  font-weight: 100;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.description {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 18px;
+  padding: 4px;
+}
+.banner_section {
+  width: 70%;
+  padding: 3rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+.banner_section > img {
+  object-fit: cover;
+  width: 100%;
 }
