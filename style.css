@@ -286,3 +286,43 @@ a {
   color: white;
   cursor: pointer;
 }
+.banner_div {
+  position: relative;
+  width: 100%;
+  min-height: 480px;
+  max-height: 480px;
+  background-image: url("./public/armCover.jpg");
+  background-repeat: no-repeat;
+  object-fit: cover;
+  background-size: cover;
+  color: white;
+}
+.left_container {
+  position: absolute;
+  padding: 2rem 15%;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.overlay {
+  position: absolute;
+  min-width: 100%;
+  background-color: #000;
+  height: 480px;
+  opacity: 80%;
+}
+.new_card_container {
+  width: 260px;
+  min-height: 400px;
+  height: 400px;
+}
+.new_card_container > img{
+  height: 100%;
+}
+.under_image{
+  background: #000;
+  color: white;
+  padding: 0.5rem;
+  text-align: center;
+  font-size: 14px;
+}
